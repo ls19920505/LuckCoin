@@ -1,0 +1,28 @@
+{
+  "name": "luckcoin",
+  "version": "1.0.0",
+  "description": "Solidity ERC-20 token with fixed supply, burnable, and no transfer taxes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls19920505/LuckCoin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ls19920505/LuckCoin/issues"
+  },
+  "homepage": "https://github.com/ls19920505/LuckCoin#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.26.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
