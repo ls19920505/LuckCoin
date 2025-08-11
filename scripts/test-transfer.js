@@ -1,10 +1,12 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const [addr, toRaw, amountInput] = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  if (args[0] === "--") args.shift();
+  const [addr, toRaw, amountInput] = args;
   if (!addr || !toRaw || !amountInput) {
     console.error(
-      "Usage: npx hardhat run scripts/test-transfer.js <tokenAddress> <to> <amount> --network <network>"
+      "Usage: npx hardhat run scripts/test-transfer.js --network <network> -- <tokenAddress> <to> <amount>"
     );
     return;
   }
