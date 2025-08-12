@@ -6,7 +6,7 @@ async function main() {
   const [addr, toRaw, amountInput] = args;
   if (!addr || !toRaw || !amountInput) {
     console.error(
-      "Usage: npx hardhat run scripts/test-transfer.js --network <network> -- <tokenAddress> <to> <amount>"
+      "Usage: npx hardhat run --network <network> scripts/test-transfer.js -- <tokenAddress> <to> <amount>"
     );
     return;
   }
